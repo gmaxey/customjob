@@ -5,4 +5,4 @@ on:
   workflow_dispatch:
 jobs:
   customJob:
-    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
+    delegates: gmaxey/customjob/custom-job.yml@v1
