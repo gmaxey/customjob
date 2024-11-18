@@ -1,0 +1,31 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: CustomJob
+name: test custom job
+description: 
+
+inputs:
+  input1:
+    description: 
+    required: true
+  input2:
+    description: 
+    required: true
+
+handlers:
+  init:
+    uses: docker://esolang/jq:latest
+    command: /bin/sh
+    args: 
+    env:
+
+  callback:
+    uses: docker://esolang/jq:latest
+    command: /bin/sh
+    args:
+    env:
+
+  cancel:
+    uses: docker://esolang/jq:latest
+    command: /bin/sh
+    args:
+    env:
